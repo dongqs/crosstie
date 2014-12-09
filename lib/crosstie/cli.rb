@@ -9,7 +9,9 @@ module Crosstie
 
     desc "new", "create a new rails application"
     def new name
-      puts "rails new #{name}"
+      cmd = "rails new #{name} --template #{template_path}"
+      puts cmd
+      system cmd
     end
 
     desc "version", "print the version of current crosstie"
@@ -23,5 +25,15 @@ module Crosstie
       puts "USAGE:\n\tcrosstie new my_app"
     end
     map %w(-h --help) => :help
+
+    private
+
+    def template_path
+      File.join root, "template.rb"
+    end
+
+    def root
+      File.expand_path File.dirname __FILE__
+    end
   end
 end

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dongqs@gmail.com"]
   spec.summary       = %q{Rails Turn-Key Initializer}
   spec.description   = %q{Turnkey a Rails project with popular gems}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dongqs/crosstie"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
