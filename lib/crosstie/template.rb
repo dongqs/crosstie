@@ -1,5 +1,10 @@
-git :init
-git add: '.'
-git commit: "-a -m 'rails new #{app_path}'"
+def root
+  @root ||= File.expand_path File.dirname __FILE__
+end
 
-gsub_file "Gemfile", "https://rubygems.org", "https://ruby.taobao.org"
+def perform action
+  eval File.read File.join root, "#{action}.rb"
+end
+
+perform :git_init
+perform :change_source
