@@ -29,7 +29,7 @@ module Crosstie
     private
 
     def template_path
-      File.join root, "template.rb"
+      File.join root, "base.rb"
     end
 
     def root
