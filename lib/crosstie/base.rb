@@ -1,3 +1,5 @@
+require 'yaml'
+
 def git_commit message
   git add: '-A'
   git commit: "-a -m '#{message}'"
