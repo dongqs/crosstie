@@ -1,3 +1,20 @@
+# user.rb
+inject_into_file "app/models/user.rb", before: 'end' do
+<<-EOF
+
+  # crosstie skeleton
+
+  # ldap
+
+  # username
+
+  # authentication_token
+
+  # authorization
+
+EOF
+end
+
 # add username to users
 inject_into_file "app/models/user.rb", after: "# username\n" do
 <<-EOF

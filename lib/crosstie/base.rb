@@ -23,19 +23,19 @@ perform :install_gems
 perform :bundle_install
 perform :add_gitignore
 # perform :stop_robots # stop google
+perform :skeleton
 perform :config_timezone
 perform :config_scaffold
 perform :serve_static
 perform :database_example
 perform :figaro
-perform :sidekiq
+perform :active_job
 perform :simple_form
 perform :rails_layout
 perform :rspec
 perform :guard
 perform :static_pages
 perform :devise
-perform :skeleton
 perform :user
 # perform :ldap # who needs this
 perform :controller_helpers

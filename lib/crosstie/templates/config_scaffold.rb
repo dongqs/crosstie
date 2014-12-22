@@ -1,6 +1,6 @@
 # application.rb
 # stop scaffold from generating css, js, helper, test for helper, test for views
-inject_into_file "config/application.rb", after: "# config.i18n.default_locale = :de\n" do
+inject_into_file 'config/application.rb', after: "# scaffold\n" do
 <<-EOS
     config.generators do |g|
       g.stylesheets false
