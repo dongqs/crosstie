@@ -1,4 +1,4 @@
-gem 'slim-rails', '3.0.0'
+gem 'slim-rails', '0.2.1'
 gem 'therubyracer', '0.12.1'
 gem 'figaro', '1.0.0'
 gem 'bootstrap-sass', '3.3.1.0'

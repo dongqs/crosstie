@@ -26,7 +26,7 @@ generate "migration", "add_username_to_users", "username:string:index"
 rake "db:migrate"
 
 gsub_file "app/views/devise/sessions/new.html.erb", ":email", ":username"
-gsub_file "app/views/devise/sessions/new.html.erb", "email_field", ":text_field"
+gsub_file "app/views/devise/sessions/new.html.erb", "email_field", "text_field"
 
 [
   "app/views/devise/registrations/new.html.erb",
