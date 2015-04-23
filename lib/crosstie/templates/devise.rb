@@ -13,9 +13,9 @@ require 'simplecov'
 SimpleCov.start
 EOF
 
-inject_into_file "spec/rails_helper.rb", after: "# Dir[Rails.root.join(\"spec/support/**/*.rb\")].each { |f| require f }\n" do
+inject_into_file "spec/rails_helper.rb", after: "# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }\n" do
 <<-EOF
-Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f } # since rspec 3.1
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f } # since rspec 3.1
 EOF
 end
 

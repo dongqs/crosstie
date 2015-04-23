@@ -18,7 +18,7 @@ EOF
 end
 gsub_file "config/routes.rb", "get 'static_pages/home'", "root to: 'static_pages#home'"
 gsub_file "config/routes.rb", "get 'static_pages/status'", "get '/status' => 'static_pages#status'"
-inject_into_file "spec/controllers/static_pages_controller_spec.rb", after: "RSpec.describe StaticPagesController, :type => :controller do\n" do
+inject_into_file "spec/controllers/static_pages_controller_spec.rb", after: "RSpec.describe StaticPagesController, type: :controller do\n" do
 <<-EOF
 
   before { sign_in_user }
