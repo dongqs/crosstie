@@ -31,11 +31,11 @@ perform :database_example
 perform :figaro
 perform :active_job
 perform :simple_form
-perform :rails_layout
 perform :rspec
 perform :guard
 perform :static_pages
 perform :devise
+perform :rails_layout # authform for device
 perform :user
 # perform :ldap # who needs this
 perform :controller_helpers
