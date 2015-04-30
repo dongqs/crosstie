@@ -14,7 +14,7 @@ generate 'simple_form:install --bootstrap'
   'boolean: :vertical_boolean,' =>
       'boolean: :horizontal_boolean,',
 }.each do |from, to|
-  gsub_file "config/initializers/simple_form_bootstrap", from, to
+  gsub_file "config/initializers/simple_form_bootstrap.rb", from, to
 end
 
 #remove_file "lib/templates/slim/scaffold/_form.html.slim"
