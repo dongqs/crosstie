@@ -10,7 +10,6 @@
     * sign up form auto focus on username
     * colorful user role activation
     * sign in form input order
-    * bullet
     * non normal user cannot sign out
 
 ### 0.0.7
@@ -18,3 +17,4 @@
     * local install flag
     * remove spring from Guardfile
     * update gem figaro to 1.1.1
+    * add bullet

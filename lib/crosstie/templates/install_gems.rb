@@ -22,6 +22,7 @@ gem_group :development do
   gem 'rack-mini-profiler', '0.9.3'
   gem 'rails_layout', '1.0.25'
   gem 'annotate', '2.6.8'
+  gem 'bullet', '4.14.7'
 end
 
 gem_group :development, :test do
