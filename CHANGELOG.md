@@ -1,6 +1,5 @@
 ### Unreleased
   * todo
-    * spec/routings/static_pages_spec.rb
     * app/helpers/application_helper.rb
     * app/view/layouts/_navigation_links.html.slim
     * config/initializers/sidekiq.rb
@@ -10,6 +9,7 @@
     * colorful user role activation
     * sign in form input order
     * non normal user cannot sign out
+    * web console
 
 ### 0.0.7
     * run.sh for development and test
@@ -17,4 +17,5 @@
     * remove spring from Guardfile
     * update gem figaro to 1.1.1
     * add bullet
-    * add all roles to the first user
+    * grant all roles to the first user
+    * spec/routing/static_pages_spec.rb

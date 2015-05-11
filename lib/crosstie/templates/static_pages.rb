@@ -24,3 +24,20 @@ inject_into_file "spec/controllers/static_pages_controller_spec.rb", after: "RSp
   before { sign_in_user }
 EOF
 end
+
+create_file "spec/routing/static_pages_spec.rb", <<-EOF
+require "rails_helper"
+
+describe StaticPagesController, :type => :routing do
+  describe "routing" do
+
+    it "routes to #home" do
+      expect(:get => "/").to route_to("static_pages#home")
+    end
+
+    it "routes to #status" do
+      expect(:get => "/status").to route_to("static_pages#status")
+    end
+  end
+end
+EOF
