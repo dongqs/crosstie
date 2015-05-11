@@ -5,7 +5,6 @@
     * app/view/layouts/_navigation_links.html.slim
     * config/initializers/sidekiq.rb
     * config/initializers/devise.rb
-    * add system role for the first user
     * add normal role for signed up users
     * sign up form auto focus on username
     * colorful user role activation
@@ -18,3 +17,4 @@
     * remove spring from Guardfile
     * update gem figaro to 1.1.1
     * add bullet
+    * add all roles to the first user

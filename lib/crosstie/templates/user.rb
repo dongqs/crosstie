@@ -6,12 +6,29 @@ inject_into_file "app/models/user.rb", before: 'end' do
 
   # ldap
 
+  # grant roles
+
   # username
 
   # authentication_token
 
   # authorization
 
+EOF
+end
+
+# grant roles for the first user
+inject_into_file "app/models/user.rb", after: "# grant roles\n" do
+<<-EOF
+  after_create :grant_roles, if: Proc.new {
+    !Rails.env.test? && User.count == 1
+  }
+
+  def grant_roles
+    Role::USER_ROLES.each do |role|
+      self.grant role
+    end
+  end
 EOF
 end
 
