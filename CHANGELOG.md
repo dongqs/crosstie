@@ -12,8 +12,9 @@
     * sign in form input order
     * bullet
     * non normal user cannot sign out
-    * update gems
 
 ### 0.0.7
     * run.sh for development and test
     * local install flag
+    * update gems
+      * figaro 1.1.1

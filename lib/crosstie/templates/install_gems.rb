@@ -1,6 +1,6 @@
 gem 'slim-rails', '3.0.1'
 gem 'therubyracer', '0.12.2'
-gem 'figaro', '1.1.0'
+gem 'figaro', '1.1.1'
 gem 'bootstrap-sass', '3.3.4.1'
 gem 'simple_form', '3.1.0'
 gem 'quiet_assets', '1.1.0'
