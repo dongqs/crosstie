@@ -8,25 +8,29 @@ module Crosstie
 
     desc 'new my_app', 'create a new rails application'
     def new name
-      if File.exist? 'resources.yml'
+      if File.exist? 'config.yml'
         FileUtils.mkdir_p '/tmp/crosstie'
-        FileUtils.cp 'resources.yml', '/tmp/crosstie/resources.yml'
+        FileUtils.cp 'config.yml', '/tmp/crosstie/config.yml'
       end
       cmd = "rails new #{name} --template #{template_path}"
       puts cmd
       system cmd
     end
 
-    desc 'resources', 'create a resources.yml template'
-    def resources
-      puts 'writing resources.yml'
-      File.write 'resources.yml', <<-EOF
-article:
-  - title:string
-  - content:text
-comment:
-  - article:references
-  - content:text
+    desc 'config', 'create a config.yml template'
+    option :local, type: :boolean
+    def config
+      puts 'writing config.yml'
+      File.write 'config.yml', <<-EOF
+options:
+  local: #{!!options[:local]}
+resources:
+  article:
+    - title:string
+    - content:text
+  comment:
+    - article:references
+    - content:text
       EOF
     end
 

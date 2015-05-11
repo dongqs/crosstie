@@ -12,5 +12,5 @@ cd tmp
 pwd
 ps aux | grep spring | awk '{print $2}' | xargs kill -9
 rm -rf sandbox
-crosstie resources
+crosstie config --local
 crosstie new sandbox

@@ -15,6 +15,21 @@ end
 
 def perform task
   eval File.read File.join root, "templates", "#{task}.rb"
+rescue => e
+  puts "error on performing #{task}"
+  raise e
+end
+
+def config
+  return @config if @config
+  config_path = '/tmp/crosstie/config.yml'
+  if File.exist? config_path
+    @config = YAML.load(File.read(config_path))
+    File.delete config_path
+  else
+    @config = {}
+  end
+  @config
 end
 
 perform :git_init

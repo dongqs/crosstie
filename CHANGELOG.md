@@ -13,7 +13,7 @@
     * bullet
     * non normal user cannot sign out
     * update gems
-    * local install flag
 
 ### 0.0.7
     * run.sh for development and test
+    * local install flag

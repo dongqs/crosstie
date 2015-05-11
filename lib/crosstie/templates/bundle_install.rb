@@ -1,2 +1,5 @@
-run "bundle install -V"
-# run "bundle install --local" # for development
+if config['options']['local']
+  run "bundle install --local"
+else
+  run "bundle install --verbose"
+end
