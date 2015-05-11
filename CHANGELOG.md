@@ -16,5 +16,5 @@
 ### 0.0.7
     * run.sh for development and test
     * local install flag
-    * update gems
-      * figaro 1.1.1
+    * remove spring from Guardfile
+    * update gem figaro to 1.1.1
