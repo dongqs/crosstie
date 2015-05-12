@@ -1,6 +1,4 @@
 ### Unreleased
-  * todo
-    * web console
 
 ### 0.0.7
     * run.sh for development and test
@@ -23,3 +21,4 @@
     * sign in form input order
     * sign up form auto focus on username
     * colorful user role activation
+    * web console

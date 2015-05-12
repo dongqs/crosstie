@@ -21,6 +21,8 @@ inject_into_file "config/application.rb", after: "class Application < Rails::App
 
     # active_job
 
+    # web_console
+
 EOF
 end
 
@@ -29,6 +31,8 @@ inject_into_file "config/routes.rb", after: "Rails.application.routes.draw do\n"
 <<-EOF
 
   # active_job
+
+  # web_console
 
 EOF
 end

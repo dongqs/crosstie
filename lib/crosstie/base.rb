@@ -49,6 +49,7 @@ perform :simple_form
 perform :rspec
 perform :guard
 perform :static_pages
+perform :web_console
 perform :devise
 perform :rails_layout # authform for device
 perform :user
