@@ -1,6 +1,5 @@
 ### Unreleased
   * todo
-    * app/helpers/application_helper.rb
     * app/view/layouts/_navigation_links.html.slim
     * config/initializers/sidekiq.rb
     * config/initializers/devise.rb
@@ -19,3 +18,4 @@
     * add bullet
     * grant all roles to the first user
     * spec/routing/static_pages_spec.rb
+    * app/helpers/application_helper.rb
