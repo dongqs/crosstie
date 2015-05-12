@@ -3,7 +3,6 @@
     * sign up form auto focus on username
     * colorful user role activation
     * sign in form input order
-    * non normal user cannot sign out
     * web console
 
 ### 0.0.7
@@ -23,3 +22,4 @@
     * improve controller tests
     * adjust task order
     * add normal role for signed up users
+    * fix bug: non normal user cannot sign out

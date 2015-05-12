@@ -1,5 +1,5 @@
 
-  before_action :authenticate_normal!
+  before_action :authenticate_normal!, unless: :devise_controller?
 
   class AuthenticationError < SecurityError; end
   class AuthorizationError < SecurityError; end
