@@ -81,3 +81,9 @@ EOF
 end
 
 gsub_file "config/initializers/devise.rb", "# config.authentication_keys = [ :email ]", "config.authentication_keys = [ :username ]"
+
+# add tabindex to sign in
+inject_into_file "app/views/devise/sessions/new.html.erb", ", tabindex: 1", after: "f.text_field :username"
+inject_into_file "app/views/devise/sessions/new.html.erb", ", tabindex: 2", after: "f.password_field :password"
+inject_into_file "app/views/devise/sessions/new.html.erb", ", tabindex: 3", after: "f.check_box :remember_me"
+inject_into_file "app/views/devise/sessions/new.html.erb", ", tabindex: 4", after: "f.submit 'Sign in'"

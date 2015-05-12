@@ -1,8 +1,7 @@
 ### Unreleased
   * todo
-    * sign up form auto focus on username
     * colorful user role activation
-    * sign in form input order
+    * sign up form auto focus on username
     * web console
 
 ### 0.0.7
@@ -23,3 +22,4 @@
     * adjust task order
     * add normal role for signed up users
     * fix bug: non normal user cannot sign out
+    * sign in form input order
