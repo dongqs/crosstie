@@ -1,6 +1,5 @@
 ### Unreleased
   * todo
-    * colorful user role activation
     * web console
 
 ### 0.0.7
@@ -23,3 +22,4 @@
     * fix bug: non normal user cannot sign out
     * sign in form input order
     * sign up form auto focus on username
+    * colorful user role activation
