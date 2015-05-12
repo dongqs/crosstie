@@ -1,7 +1,6 @@
 ### Unreleased
   * todo
     * app/view/layouts/_navigation_links.html.slim
-    * config/initializers/devise.rb
     * add normal role for signed up users
     * sign up form auto focus on username
     * colorful user role activation
@@ -18,4 +17,5 @@
     * grant all roles to the first user
     * add spec/routing/static_pages_spec.rb
     * add app/helpers/application_helper.rb
-    * default ignore config/initializers/sidekiq.rb
+    * comment config/initializers/sidekiq.rb
+    * uncomment secret_key in config/initializers/devise.rb

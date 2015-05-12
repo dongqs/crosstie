@@ -1,6 +1,9 @@
 # devise
 generate "devise:install"
 
+# secret key
+gsub_file "config/initializers/devise.rb", "# config.secret_key", "config.secret_key"
+
 # improve password strength
 gsub_file "config/initializers/devise.rb", "config.password_length = 8..128", "config.password_length = 4..128"
 
