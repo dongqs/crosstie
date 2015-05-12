@@ -12,7 +12,7 @@ module Crosstie
         FileUtils.mkdir_p '/tmp/crosstie'
         FileUtils.cp 'config.yml', '/tmp/crosstie/config.yml'
       end
-      cmd = "rails new #{name} --template #{template_path}"
+      cmd = "rails new #{name} --template #{template_path} --skip-spring --skip-test-unit --skip-bundle"
       puts cmd
       system cmd
     end
