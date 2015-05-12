@@ -1,7 +1,6 @@
 ### Unreleased
   * todo
     * app/view/layouts/_navigation_links.html.slim
-    * config/initializers/sidekiq.rb
     * config/initializers/devise.rb
     * add normal role for signed up users
     * sign up form auto focus on username
@@ -17,5 +16,6 @@
     * update gem figaro to 1.1.1
     * add bullet
     * grant all roles to the first user
-    * spec/routing/static_pages_spec.rb
-    * app/helpers/application_helper.rb
+    * add spec/routing/static_pages_spec.rb
+    * add app/helpers/application_helper.rb
+    * default ignore config/initializers/sidekiq.rb

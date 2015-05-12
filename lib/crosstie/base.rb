@@ -58,6 +58,7 @@ perform :authentication_token
 perform :rolify
 perform :authorization
 perform :seeds
+perform :helper
 perform :resources
 git_commit "project created"
 perform :run_test

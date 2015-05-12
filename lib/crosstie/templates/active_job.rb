@@ -6,13 +6,13 @@ EOF
 run "cp config/application.yml config/application.yml.example"
 
 create_file "config/initializers/sidekiq.rb", <<-EOF
-Sidekiq.configure_server do |config|
-  config.redis = { :url => "redis://\#{ENV['REDIS_HOST']}:\#{ENV['REDIS_PORT']}/0", :namespace => '#{app_path}' }
-end
-
-Sidekiq.configure_client do |config|
-  config.redis = { :url => "redis://\#{ENV['REDIS_HOST']}:\#{ENV['REDIS_PORT']}/0", :namespace => '#{app_path}' }
-end
+#Sidekiq.configure_server do |config|
+#  config.redis = { :url => "redis://\#{ENV['REDIS_HOST']}:\#{ENV['REDIS_PORT']}/0", :namespace => '#{app_path}' }
+#end
+#
+#Sidekiq.configure_client do |config|
+#  config.redis = { :url => "redis://\#{ENV['REDIS_HOST']}:\#{ENV['REDIS_PORT']}/0", :namespace => '#{app_path}' }
+#end
 EOF
 
 create_file "tmp/pids/.keep", ""
