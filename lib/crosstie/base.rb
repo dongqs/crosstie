@@ -59,6 +59,6 @@ perform :rolify
 perform :authorization
 perform :helper
 perform :resources
-git_commit "project created"
 perform :run_test
 perform :seeds
+git_commit "project created"

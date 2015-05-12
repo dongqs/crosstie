@@ -21,3 +21,4 @@
     * app/view/layouts/_navigation_links.html.slim
     * rails new --skip-spring --skip-bundle --skip-test-unit
     * seed at last
+    * improve controller tests
