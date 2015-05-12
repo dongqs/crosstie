@@ -70,11 +70,12 @@ gsub_file "app/views/devise/sessions/new.html.erb", "email_field", "text_field"
   "app/views/devise/registrations/new.html.erb",
   "app/views/devise/registrations/edit.html.erb",
 ].each do |file|
+  gsub_file file, ", :autofocus => true", ""
   inject_into_file file, after: "<%= devise_error_messages! %>\n" do
 <<-EOF
     <div class="form-group">
       <%= f.label :username %>
-      <%= f.text_field :username, class: 'form-control' %>
+      <%= f.text_field :username, autofocus: true, class: 'form-control' %>
     </div>
 EOF
   end
