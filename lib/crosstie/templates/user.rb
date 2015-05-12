@@ -8,6 +8,8 @@ inject_into_file "app/models/user.rb", before: 'end' do
 
   # grant roles
 
+  # grant normal
+
   # username
 
   # authentication_token
@@ -31,6 +33,25 @@ inject_into_file "app/models/user.rb", after: "# grant roles\n" do
   end
 EOF
 end
+
+# grant normal role for signed up users
+inject_into_file "app/models/user.rb", after: "# grant normal\n" do
+<<-EOF
+  after_create :grant_normal, if: Proc.new {
+    ENV['GRANT_NORMAL']
+  }
+
+  def grant_normal
+    self.grant :normal
+  end
+EOF
+end
+
+append_file "config/application.yml", <<-EOF
+#GRANT_NORMAL: true
+EOF
+run "cp config/application.yml config/application.yml.example"
+
 
 # add username to users
 inject_into_file "app/models/user.rb", after: "# username\n" do

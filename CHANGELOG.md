@@ -1,6 +1,5 @@
 ### Unreleased
   * todo
-    * add normal role for signed up users
     * sign up form auto focus on username
     * colorful user role activation
     * sign in form input order
@@ -23,3 +22,4 @@
     * seed at last
     * improve controller tests
     * adjust task order
+    * add normal role for signed up users
