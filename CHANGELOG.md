@@ -19,3 +19,5 @@
     * comment config/initializers/sidekiq.rb
     * uncomment secret_key in config/initializers/devise.rb
     * app/view/layouts/_navigation_links.html.slim
+    * rails new --skip-spring --skip-bundle --skip-test-unit
+    * seed at last
