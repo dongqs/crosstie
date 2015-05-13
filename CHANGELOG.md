@@ -1,6 +1,8 @@
 ### Unreleased
   * test for role
   * test for user
+  * move web-console out of development group in Gemfile
+  * dropdown menu in navbar
 
 ### 0.0.7
   * run.sh for development and test
